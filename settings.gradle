@@ -13,5 +13,6 @@ pluginManagement {
     includeBuild('build-logic')
 }
 
+
 rootProject.name = 'groovy_2022_12'
 include 'homework01'
