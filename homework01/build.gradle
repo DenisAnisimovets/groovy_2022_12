@@ -1,0 +1,43 @@
+plugins {
+    id 'groovy'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+apply plugin: "com.github.johnrengelman.shadow"
+group 'com.danis'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
+    implementation "gradle.plugin.com.github.johnrengelman:shadow:7.1.2"
+
+}
+
+apply plugin: "com.github.johnrengelman.shadow"
+
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+shadowJar {
+
+    archiveVersion.set('0.1')
+    archiveClassifier.set('')
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.build.dependsOn tasks.test
+tasks.build.dependsOn tasks.shadowJar
