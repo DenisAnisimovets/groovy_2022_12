@@ -36,5 +36,4 @@ jobs:
       - name: Test with Gradle
         run: ./gradlew test
         timeout-minutes: 60
-Footer
-© 2023 GitHub
+
