@@ -25,8 +25,6 @@ class Storage {
         }
     }
 
-
-
     boolean take(int sum) {
 
         if(sum > StorageUtil.getBalance(this)) {
