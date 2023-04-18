@@ -1,7 +1,7 @@
 class ATM {
-    private final Storage2 storage;
+    private final Storage storage;
 
-    ATM(Storage2 storage) {
+    ATM(Storage storage) {
         this.storage = storage;
     }
 
@@ -17,7 +17,7 @@ class ATM {
         return storage.take(sum);
     }
 
-    Storage2 getStorage() {
+    Storage getStorage() {
         return storage;
     }
 }
