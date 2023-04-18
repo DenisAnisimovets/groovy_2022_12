@@ -10,7 +10,7 @@ class ATMTest {
 
     @BeforeEach
     void init() {
-        atm = new ATM(new Storage());
+        atm = new ATM(new Storage2());
         atm.addMoney(Banknote.Nom_10, 5);
         atm.addMoney(Banknote.Nom_100, 5);
         atm.addMoney(Banknote.Nom_50, 10);

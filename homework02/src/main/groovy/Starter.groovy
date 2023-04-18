@@ -1,6 +1,6 @@
 class Starter {
     static void main(String[] args) {
-        ATM atm = new ATM(new Storage());
+        ATM atm = new ATM(new Storage2());
         StorageUtil.showBanknotsInStorage(atm.getStorage());
         atm.addMoney(Banknote.Nom_10, 5);
         atm.addMoney(Banknote.Nom_100, 5);
