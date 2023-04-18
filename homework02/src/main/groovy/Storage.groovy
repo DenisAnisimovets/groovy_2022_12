@@ -1,6 +1,6 @@
 import java.util.stream.Collectors
 
-class Storage{
+class Storage {
     private final TreeMap<Banknote, Integer> banknotsInStorage = new TreeMap<>();
 
     Storage() {
@@ -24,8 +24,6 @@ class Storage{
             throw new RuntimeException("Нет такого номинала банкнот! Невозможно забрать деньги!");
         }
     }
-
-
 
     boolean take(int sum) {
 
