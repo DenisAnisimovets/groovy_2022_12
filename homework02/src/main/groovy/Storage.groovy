@@ -1,6 +1,6 @@
 import java.util.stream.Collectors
 
-class Storage {
+class Storage{
     private final TreeMap<Banknote, Integer> banknotsInStorage = new TreeMap<>();
 
     Storage() {
