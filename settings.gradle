@@ -10,4 +10,5 @@
 rootProject.name = 'groovy_2022_12'
 include 'homework01'
 include 'homework02'
+include 'homework03'
 
