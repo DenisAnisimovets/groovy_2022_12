@@ -1,0 +1,9 @@
+{
+  "id" : 1,
+  "name": "Ivan",
+  "age": 45,
+  "secretIdentity": "IDontSayIt",
+  "powers": [
+    100
+  ]
+}
